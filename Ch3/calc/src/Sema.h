@@ -5,6 +5,7 @@
 #include "Lexer.h"
 #include "llvm/ADT/StringSet.h"
 #include "llvm/Support/raw_ostream.h"
+#include <map>
 
 class Sema{
     public:
