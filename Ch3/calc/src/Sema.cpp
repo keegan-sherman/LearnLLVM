@@ -12,7 +12,7 @@ namespace{
       void error(ErrorType ET, llvm::StringRef V){
         llvm::errs() << "Variable " << V << " "
           << (ET == Twice ? "already" : "not")
-          << "declared\n";
+          << " declared\n";
         HasError = true;
       }
 
