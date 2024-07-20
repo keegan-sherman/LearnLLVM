@@ -6,3 +6,6 @@ add_executable(calc
   Sema.cpp
 )
 target_link_libraries(calc PRIVATE ${llvm_libs})
+install(TARGETS calc
+        RUNTIME DESTINATION bin
+        COMPONENT calc)
