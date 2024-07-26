@@ -9,7 +9,7 @@ namespace{
   };
 
   SourceMgr::DiagKind DiagnosticKind[] = {
-    #define DIAG(ID, Level, Msg) SourceMgr::DK_##Level
+    #define DIAG(ID, Level, Msg) SourceMgr::DK_##Level,
     #include "tinylang/Basic/Diagnostic.def"
   };
 } // namespace

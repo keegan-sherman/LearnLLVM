@@ -12,7 +12,7 @@ DIAG(note_module_identifier_declaration, Note, "module identifier declared here"
 DIAG(err_proc_identifier_not_equal, Error, "procedure identifier at begin and end not equal")
 DIAG(note_proc_identifier_declaration, Note, "procedure identifier declared here")
 
-DIAG(err_sym_declared, Error, "symbol {0} already declared")
+DIAG(err_symbold_declared, Error, "symbol {0} already declared")
 DIAG(err_types_for_operator_not_compatible, Error, "types not compatible for operator {0}")
 DIAG(err_undeclared_name, Error, "undeclared name {0}")
 DIAG(err_if_expr_must_be_bool, Error, "expression of IF statement must have type BOOLEAN")

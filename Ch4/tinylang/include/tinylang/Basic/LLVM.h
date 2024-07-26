@@ -25,4 +25,4 @@ namespace tinylang{
   using llvm::StringRef;
 } // namespace tinylang
 
-#endif
+#endif // TINYLANG_BASIC_LLVM_H

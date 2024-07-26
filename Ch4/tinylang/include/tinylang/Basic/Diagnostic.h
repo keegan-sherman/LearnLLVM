@@ -15,7 +15,7 @@ namespace tinylang{
       #define DIAG(ID, Level, Msg) ID,
       #include "tinylang/Basic/Diagnostic.def"
     };
-  }
+  } // namesapce diag
 
   class DiagnosticsEngine{
     private:
@@ -27,7 +27,7 @@ namespace tinylang{
     public:
       DiagnosticsEngine(llvm::SourceMgr& SrcMgr) : SrcMgr(SrcMgr), NumErrors(0) {}
 
-      unsigned numErrors() {return NumErrors;}
+      unsigned numErrors() { return NumErrors; }
       template <typename... Args>
       void report(SMLoc Loc, unsigned DiagID, Args&&... Arguments){
         std::string Msg = llvm::formatv(getDiagnosticKind(DiagID),
@@ -39,4 +39,4 @@ namespace tinylang{
   };
 } // namespace tinylang
 
-#endif
+#endif // TINYLANG_BASIC_DIAGNOSTIC_H
